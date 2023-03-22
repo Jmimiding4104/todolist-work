@@ -1,7 +1,8 @@
 const http = require('http');
 
 const requestListener = (req,res) => {
-    console.log(55);
+    res.writeHead(200,{"Content-Type":"application/json"})
+    res.write('{"obj":"123"}')
     res.end();
 }
 
